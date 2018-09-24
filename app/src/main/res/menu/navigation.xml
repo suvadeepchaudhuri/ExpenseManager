@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/ic_credit_card_black_24dp"
+        android:title="@string/title_addExpense" />
+
+    <item
+        android:id="@+id/navigation_view"
+        android:icon="@drawable/ic_list_black_24dp"
+        android:title="@string/title_viewSummary" />
+
+    <item
+        android:id="@+id/navigation_budget"
+        android:icon="@drawable/ic_pie_chart_black_24dp"
+        android:title="@string/title_viewBudget" />
+
+    <item
+        android:id="@+id/navigation_manage"
+        android:icon="@drawable/ic_mode_edit_black_24dp"
+        android:title="@string/title_manage" />
+
+</menu>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/editexpense_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Expense Label"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.016" />
+
+        <EditText
+            android:id="@+id/editexpense_ExpenseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:hint="Eg: Electricity bill"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editexpense_label"
+            app:layout_constraintTop_toBottomOf="@+id/editexpense_label" />
+
+        <TextView
+            android:id="@+id/editexpense_amtlabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Expense Amount (USD)"
+            app:layout_constraintStart_toStartOf="@+id/editexpense_ExpenseName"
+            app:layout_constraintTop_toBottomOf="@+id/editexpense_ExpenseName" />
+
+        <EditText
+            android:id="@+id/edit_ExpenseAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:hint="Eg: 80"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/editexpense_amtlabel"
+            app:layout_constraintTop_toBottomOf="@+id/editexpense_amtlabel" />
+
+        <TextView
+            android:id="@+id/editexpense_catlabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Expense Category"
+            app:layout_constraintStart_toStartOf="@+id/edit_ExpenseAmount"
+            app:layout_constraintTop_toBottomOf="@+id/edit_ExpenseAmount" />
+
+        <Spinner
+            android:id="@+id/editexpense_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/editexpense_catlabel"
+            app:layout_constraintTop_toBottomOf="@+id/editexpense_catlabel" />
+
+        <Button
+            android:id="@+id/edit_expenseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/default_button_bg"
+            android:backgroundTint="@color/colorWhiteUnselected"
+            android:elevation="0dp"
+            android:text=" * Edit Expense "
+            app:layout_constraintStart_toStartOf="@+id/editexpense_category_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/editexpense_category_spinner"/>
+
+    </LinearLayout>
+
+</FrameLayout>
